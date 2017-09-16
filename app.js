@@ -18,7 +18,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', (request, response) => {
-    //response.send("Hello World!");
     response.render('contact');
 });
 
@@ -43,7 +42,7 @@ app.post('/send', (request, response) => {
         secure: false, // true for 465, false for other ports
         auth: {
             user: 'krtolica89@gmail.com', // generated ethereal user
-            pass: 'koliko89'  // generated ethereal password
+            pass: 'password'  // generated ethereal password
         },
         tls: {
             rejectUnauthorized: false

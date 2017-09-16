@@ -1,1 +1,1 @@
-node-app
+Sample app using nodemailer
